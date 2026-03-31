@@ -1,0 +1,54 @@
+site_name: Manuale tecnico P3N RT
+site_url: https://github.com/ivanrobuschi-custom/P3N_RT.git
+site_author: Ivan Robuschi
+theme:
+  name: material
+  logo: assets/icons/logo.png
+  favicon: assets/icons/favicon.png
+  language: it
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.preview
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.sections
+    - navigation.prune
+    - navigation.indexes
+    # - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+
+  palette:
+    primary: blue grey
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  
+plugins:
+  - search
+  - tags
+
+copyright: Copyright Custom S.p.A 2026
+nav:
+- Home: index.md
+- MANUALE ASSISTENZA P3-N RT:
+  - Introduzione: index.md
+  - GENERALITÀ: generalita.md
+  - MECCANICA: meccanica.md
+  - ELETTRONICA: elettronica.md
+  - RICERCA GUASTI: ricerca-guasti.md
+  - MESSA IN SERVIZIO: messa-in-servizio.md
+  - PROCEDURE: procedure.md
+  - ESPLOSI: esplosi.md
