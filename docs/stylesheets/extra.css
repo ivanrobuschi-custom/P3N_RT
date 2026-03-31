@@ -22,18 +22,22 @@
   /* CONFIGURAZIONE COLORI AZIENDALI
    */
 
-  /* 1. Header e Colore Primario (Link, Titoli attivi) - HEX: #617C8D */
-  --md-primary-fg-color:        #D0E5F2;
-  --md-primary-fg-color--light: #7A92A1; /* Una variante leggermente più chiara per gli hover */
-  --md-primary-fg-color--dark:  #4B6270; /* Una variante leggermente più scura */
+  /* 1. Colori Primari (Header, link attivi, etc.) */
 
-  /* 2. Footer (Sfondo generale) - HEX: #1B3640 */
+  /* Colore di sfondo per l'header e altri elementi primari */
+  --md-primary-fg-color:        #D0E5F2;
+  --md-primary-fg-color--light: #7A92A1;
+  --md-primary-fg-color--dark:  #4B6270;
+
+  /* Colore del testo e delle icone sull'header e sugli elementi primari attivi (es. menu sezioni) */
+  --md-primary-bg-color:        #383E42;
+
+  /* 2. Colori Footer */
   --md-footer-bg-color:         #383E42;
   
   /* 3. Footer Bottom (La striscia del Copyright in basso) */
   /* Di base eredita il colore sopra, ma lo forziamo per sicurezza */
   --md-footer-bottom-bg-color:  #1B3640; 
-  
   /* Assicuriamo che il testo nel footer sia bianco per contrasto */
   --md-footer-fg-color:         #FFFFFF;
 }
