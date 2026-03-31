@@ -20,7 +20,7 @@
    */
 
   /* 1. Header e Colore Primario (Link, Titoli attivi) - HEX: #617C8D */
-  --md-primary-fg-color:        #617C8D;
+  --md-primary-fg-color:        #D0E5F2;
   --md-primary-fg-color--light: #7A92A1; /* Una variante leggermente più chiara per gli hover */
   --md-primary-fg-color--dark:  #4B6270; /* Una variante leggermente più scura */
 
