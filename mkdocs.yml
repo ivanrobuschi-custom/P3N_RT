@@ -24,9 +24,10 @@ theme:
     - search.highlight
     - search.share
     - navigation.footer
-
-  palette:
-    primary: blue grey
+# La configurazione della palette qui sovrascrive i colori definiti in extra.css.
+# Per usare i colori da extra.css, questa sezione deve essere rimossa o commentata.
+#   palette:
+#     primary: blue grey
 
 extra_css:
   - stylesheets/extra.css
