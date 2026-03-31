@@ -33,7 +33,7 @@ ATTENZIONE: PRIMA DI PROCEDERE CON QUALSIASI OPERAZIONE, LEGGERE ACCURATAMENTE L
 
 **Parti esterne**
 
-1.  Pulsante apertura coperchio vano carta
+1. Pulsante apertura coperchio vano carta
 2.  Uscita carta
 3.  Tasto FEED
 4.  Tasto ON/OFF
