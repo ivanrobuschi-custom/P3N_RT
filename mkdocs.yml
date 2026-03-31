@@ -44,11 +44,11 @@ copyright: Copyright Custom S.p.A 2026
 nav:
 - Home: index.md
 - MANUALE ASSISTENZA P3-N RT:
-  - Introduzione: index.md
-  - GENERALITÀ: generalita.md
-  - MECCANICA: meccanica.md
-  - ELETTRONICA: elettronica.md
-  - RICERCA GUASTI: ricerca-guasti.md
-  - MESSA IN SERVIZIO: messa-in-servizio.md
+  - Introduzione: index2.md
+- GENERALITÀ: generalita.md
+- MECCANICA: meccanica.md
+- ELETTRONICA: elettronica.md
+- RICERCA GUASTI: ricerca-guasti.md
+- MESSA IN SERVIZIO:
   - PROCEDURE: procedure.md
-  - ESPLOSI: esplosi.md
+  - ESPLOSI: manuale-assistenza-p3-n-rt/esplosi.md
