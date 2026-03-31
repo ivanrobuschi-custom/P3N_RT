@@ -1,0 +1,1054 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Ivan Robuschi">
+      
+      
+        <link rel="canonical" href="https://github.com/ivanrobuschi-custom/P3N_RT.git/messa-in-servizio/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>MESSA IN SERVIZIO - Manuale tecnico P3N RT</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#messa-in-servizio" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="Manuale tecnico P3N RT" class="md-header__button md-logo" aria-label="Manuale tecnico P3N RT" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Manuale tecnico P3N RT
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MESSA IN SERVIZIO
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Condividi" aria-label="Condividi" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MANUALE ASSISTENZA P3-N RT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../generalita/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  GENERALITÀ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../meccanica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  MECCANICA
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../elettronica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ELETTRONICA
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ricerca-guasti/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  RICERCA GUASTI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../procedure/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MESSA IN SERVIZIO
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Manuale tecnico P3N RT" class="md-nav__button md-logo" aria-label="Manuale tecnico P3N RT" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    Manuale tecnico P3N RT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../index2/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MANUALE ASSISTENZA P3-N RT
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generalita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GENERALITÀ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meccanica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MECCANICA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elettronica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ELETTRONICA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ricerca-guasti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RICERCA GUASTI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../procedure/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MESSA IN SERVIZIO
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="messa-in-servizio">MESSA IN SERVIZIO</h1>
+<h1 id="messa-in-servizio_1">MESSA IN SERVIZIO</h1>
+<h2 id="1-descrizione-generale">1 DESCRIZIONE GENERALE</h2>
+<p>Il D.Lgs. 127/2015 ha sancito l’introduzione della trasmissione telematica dei corrispettivi all’Agenzia delle Entrate.</p>
+<p>La trasmissione telematica diventerà obbligatoria secondo le fasce confermate in via definitiva dalla Legge di Bilancio 2019 a partire dal 1° luglio 2019 per gli esercenti con un volume d’affari superiore a 400000 € e dal 1° gennaio 2020 per tutti gli altri esercenti a parte le categorie esentate.</p>
+<p>Le fasi necessarie per la messa in servizio di un registratore telematico sono le seguenti:
+*   Creazione della chiave privata
+*   Censimento
+*   Fiscalizzazione
+*   Accreditamento portale Fisconline
+*   Attivazione
+*   Applicazione QR code</p>
+<p>Queste fasi devono essere eseguite nell’ordine temporale con cui sono state elencate.</p>
+<h2 id="2-creazione-della-chiave-privata">2 CREAZIONE DELLA CHIAVE PRIVATA</h2>
+<p>Il dispositivo necessita di eseguire una procedura di generazione di una chiave privata al fine di poter ottenere e firmare i certificati.</p>
+<p><strong>ATTENZIONE:</strong>
+La procedura di generazione della chiave privata è possibile una sola volta.</p>
+<p>Procedere come segue:
+*   Accendere il dispositivo:
+    <div class="highlight"><pre><span></span><code>[Immagine di un pulsante ON/OFF con &quot;ON&quot; sotto]
+</code></pre></div>
+*   Passare all’assetto Programmazione premendo ripetutamente il tasto <code>CHIAVE</code> fino a che sul display non compare il messaggio “PROGRAMMAZIONE”:
+    <div class="highlight"><pre><span></span><code>[Immagine di un tasto &quot;Chiave&quot; e un flusso verso &quot;PROGRAMMAZIONE&quot;]
+</code></pre></div>
+*   Accedere alla programmazione P699:
+    <div class="highlight"><pre><span></span><code>6   9   9   SubTotale
+</code></pre></div>
+*   Selezionare “MENU TECNICO” utilizzando i tasti con le frecce di selezione:
+    <div class="highlight"><pre><span></span><code>[Immagine di frecce di selezione] oppure [Immagine di un tasto &quot;00&quot;]
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>[MENU TECNICO]
+TIPO MENU
+</code></pre></div>
+*   Confermare l’operazione con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Selezionare “SI” utilizzando i tasti con le frecce di selezione:
+    <div class="highlight"><pre><span></span><code>[Immagine di frecce di selezione] oppure [Immagine di un tasto &quot;00&quot;]
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>[SI]
+CONFERMI?
+</code></pre></div>
+*   Confermare l’operazione con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>GENERAZIONE CHIAVI
+IN CORSO \
+</code></pre></div>
+    <strong>NOTA:</strong>
+    La procedura di generazione della chiave privata può richiedere diversi minuti (fino a 20). Attendere senza spegnere il dispositivo o senza scollegare l’alimentazione.
+*   Durante l’operazione il LED lampeggerà nei colori verde/giallo ad intermittenza.
+    <div class="highlight"><pre><span></span><code>[Immagine di un LED che lampeggia]
+</code></pre></div>
+*   Alla fine della procedura, in caso di esito positivo, verrà emesso il seguente scontrino:
+    <div class="highlight"><pre><span></span><code>&lt;Nome Ditta&gt;
+&lt;Indirizzo&gt;
+&lt;Località&gt;
+&lt;Telefono - Fax&gt;
+------------------------------------
+GENERAZIONE CHIAVE PRIVATA
+------------------------------------
+&lt;ESITO POSITIVO&gt;
+
+codice http: &lt;#&gt;
+codice xml: &lt;#&gt;
+risp: &lt;#&gt;
+idoper: &lt;#&gt;
+01/01/24 12:00 &lt;#DOC. GES.&gt;
+NUMERO DI MATRICOLA &lt;matr. fiscale&gt;
+</code></pre></div></p>
+<h2 id="3-censimento">3 CENSIMENTO</h2>
+<p>Per poter funzionare correttamente e trasmettere i dati con l’Agenzia delle Entrate, il dispositivo necessita di essere censito.</p>
+<p>La procedura di censimento è possibile anche attraverso l’interfaccia del Web Server (vedere il manuale cod. 0576100M000136).</p>
+<p><strong>ATTENZIONE:</strong>
+La seguente procedura di censimento è possibile solamente dopo aver generato la chiave privata (vedere paragrafo 2 di questa sezione).</p>
+<p>Procedere come segue:
+*   Accendere il dispositivo:
+    <div class="highlight"><pre><span></span><code>[Immagine di un pulsante ON/OFF con &quot;ON&quot; sotto]
+</code></pre></div>
+*   Passare all’assetto Programmazione premendo ripetutamente il tasto <code>CHIAVE</code> fino a che sul display non compare il messaggio “PROGRAMMAZIONE”:
+    <div class="highlight"><pre><span></span><code>[Immagine di un tasto &quot;Chiave&quot; e un flusso verso &quot;PROGRAMMAZIONE&quot;]
+</code></pre></div>
+*   Accedere alla programmazione P699:
+    <div class="highlight"><pre><span></span><code>6   9   9   SubTotale
+</code></pre></div>
+*   Selezionare “MENU TECNICO” utilizzando i tasti con le frecce di selezione:
+    <div class="highlight"><pre><span></span><code>[Immagine di frecce di selezione] oppure [Immagine di un tasto &quot;00&quot;]
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>[MENU TECNICO]
+TIPO MENU
+</code></pre></div>
+*   Confermare l’operazione con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>↑_
+CODICE FISCALE
+</code></pre></div>
+*   Digitare il codice fiscale (16 caratteri) del tecnico abilitato che esegue la procedura di censimento utilizzando il tastierino numerico. Ad ogni tasto corrisponde un set di caratteri (vedere legenda sul tasto). Premere ripetutamente un tasto per scorrere il set di caratteri ad esso associato.
+    <strong>NOTA:</strong>
+    Per cancellare un carattere inserito erroneamente premere il tasto C.
+    Per cancellare tutto quanto digitato premere due volte in sequenza il tasto C.
+    <strong>NOTA:</strong>
+    In tutte le condizioni nelle quali è prevista la digitazione di caratteri, sarà possibile forzare l’immissione dei soli caratteri numerici premendo una volta il tasto:
+    <div class="highlight"><pre><span></span><code>[Immagine di un tasto &quot;Chiave&quot;]
+</code></pre></div>
+    Premendo nuovamente il tasto sopra citato, tale modalità verrà disattivata e si tornerà alla modalità di immissione di caratteri alfanumerici. A conferma della modalità in cui ci si trova, a display compariranno le diciture “[NUMERIC]” oppure “[ALPHANUMERIC]”.
+*   Confermare con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Selezionare “CENSIMENTO” utilizzando i tasti con le frecce di selezione:
+    <div class="highlight"><pre><span></span><code>[Immagine di frecce di selezione] oppure [Immagine di un tasto &quot;00&quot;]
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>[CENSIMENTO]
+SELEZIONA SERVIZIO
+</code></pre></div>
+*   Confermare l’operazione con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>↑_
+CF/P.IVA CENTRO ASS.
+</code></pre></div>
+*   Digitare il codice fiscale (16 caratteri) o la partita IVA (11 caratteri) della società a cui il tecnico abilitato che esegue la procedura di censimento risponde utilizzando il tastierino numerico. Ad ogni tasto corrisponde un set di caratteri (vedere legenda sul tasto). Premere ripetutamente un tasto per scorrere il set di caratteri ad esso associato.
+    <strong>NOTA:</strong>
+    Per cancellare un carattere inserito erroneamente premere il tasto C.
+    Per cancellare tutto quanto digitato premere due volte in sequenza il tasto C.
+*   Confermare con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Selezionare “SI” utilizzando i tasti con le frecce di selezione:
+    <div class="highlight"><pre><span></span><code>[Immagine di frecce di selezione] oppure [Immagine di un tasto &quot;00&quot;]
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>[SI]
+CONFERMI?
+</code></pre></div>
+*   Confermare con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>CENSIMENTO
+IN CORSO \
+</code></pre></div>
+*   Durante l’operazione il LED lampeggerà nei colori verde/giallo ad intermittenza.
+    <div class="highlight"><pre><span></span><code>[Immagine di un LED che lampeggia]
+</code></pre></div>
+*   Alla fine della procedura, in caso di esito positivo, verranno emessi i seguenti scontrini:
+    <div class="highlight"><pre><span></span><code>&lt;Nome Ditta&gt;
+&lt;Indirizzo&gt;
+&lt;Località&gt;
+&lt;Telefono - Fax&gt;
+------------------------------------
+CENSIMENTO
+------------------------------------
+&lt;ESITO POSITIVO&gt;
+
+codice http: &lt;#&gt;
+codice xml: &lt;#&gt;
+risp: certificato ricevuto
+idoper: &lt;#&gt;
+01/01/24 12:00 &lt;#DOC. GES.&gt;
+NUMERO DI MATRICOLA &lt;matr. fiscale&gt;
+</code></pre></div>
+    <div class="highlight"><pre><span></span><code>&lt;Nome Ditta&gt;
+&lt;Indirizzo&gt;
+&lt;Località&gt;
+&lt;Telefono - Fax&gt;
+------------------------------------
+MIGRA SETDEVICE STATUS
+------------------------------------
+&lt;ESITO POSITIVO&gt;
+
+codice http: &lt;#&gt;
+codice xml: &lt;#&gt;
+risp: servizio processato
+01/01/24 12:00 &lt;#DOC. GES.&gt;
+NUMERO DI MATRICOLA &lt;matr. fiscale&gt;
+</code></pre></div></p>
+<h2 id="4-fiscalizzazione">4 FISCALIZZAZIONE</h2>
+<p>La fiscalizzazione deve essere eseguita dal tecnico di assistenza solo al momento della definitiva messa in funzione del dispositivo. Dopo aver eseguito tale operazione è consentito l’uso fiscale dell’apparecchio.</p>
+<p><strong>ATTENZIONE:</strong>
+L’operazione di fiscalizzazione è irreversibile, per cui una volta effettuata non sarà possibile ritornare nello stato non fiscale.</p>
+<p>Prima della fiscalizzazione accertarsi che la data impostata sia corretta, poiché a fiscalizzazione avvenuta non sarà più possibile introdurre una data precedente a quella di fiscalizzazione.</p>
+<p>Al momento della fiscalizzazione tutti i dati eventualmente contenuti nei totalizzatori del dispositivo vengono azzerati.</p>
+<p>Prima di eseguire la fiscalizzazione del dispositivo, è necessario effettuare l’attivazione mediante la procedura descritta al paragrafo 6 di questa sezione.</p>
+<p>Procedere come segue:
+*   Passare all’assetto Programmazione premendo ripetutamente il tasto <code>CHIAVE</code> fino a che sul display non compare il messaggio “PROGRAMMAZIONE”:
+    <div class="highlight"><pre><span></span><code>[Immagine di un tasto &quot;Chiave&quot; e un flusso verso &quot;PROGRAMMAZIONE&quot;]
+</code></pre></div>
+*   Accedere alla programmazione P690:
+    <div class="highlight"><pre><span></span><code>6   9   0   SubTotale
+</code></pre></div>
+*   Inserire la password di protezione:
+    <div class="highlight"><pre><span></span><code>1   4   7   8   9   6   SubTotale
+</code></pre></div>
+*   Il dispositivo emette il seguente scontrino di conferma dell’avvenuta fiscalizzazione:
+    <div class="highlight"><pre><span></span><code>------------------------------------
+P(690) FISCALIZZAZIONE
+------------------------------------
+*** FISCALIZZATO ***
+
+01/01/24 12:00 &lt;#SNF #ST&gt;
+NUMERO DI MATRICOLA: &lt;matr. fiscale&gt;
+</code></pre></div>
+*   Inizializzare la memoria permanente di dettaglio (vedere paragrafo 4 di questa sezione).</p>
+<h2 id="5-accreditamento-al-portale-fisconline">5 ACCREDITAMENTO AL PORTALE FISCONLINE</h2>
+<p>Prima di iniziare la fase di attivazione, l’esercente deve accreditarsi al portale Fisconline dell’Agenzia delle Entrate (https://telematici.agenziaentrate.gov.it) dedicato ai servizi telematici per ricevere l’autorizzazione all’attivazione.</p>
+<div class="highlight"><pre><span></span><code>[Diagramma che mostra:
+- &quot;Esercente&quot; che effettua &quot;accreditamento al portale (anche tramite il commercialista)&quot; verso &quot;Fisconline&quot;.
+- &quot;Fisconline&quot; che invia &quot;autorizzazione all&#39;attivazione&quot; verso &quot;Esercente accreditato&quot;.
+]
+</code></pre></div>
+<h2 id="6-attivazione">6 ATTIVAZIONE</h2>
+<p>Per poter funzionare come registratore telematico (RT) operante sul campo secondo quanto previsto dal D.Lgs. 127/2015, il dispositivo necessita di essere attivato.</p>
+<p>La procedura di attivazione è possibile anche attraverso l’interfaccia del Web Server (vedere il manuale cod. 0576100M000136).</p>
+<p><strong>ATTENZIONE:</strong>
+La seguente procedura di attivazione è possibile solamente su dispositivo fiscalizzato, dopo aver generato la chiave privata e dopo avere effettuato il censimento (vedere rispettivamente paragrafo 2 e paragrafo 3 di questa sezione).</p>
+<p>Procedere come segue:
+*   Accendere il dispositivo:
+    <div class="highlight"><pre><span></span><code>[Immagine di un pulsante ON/OFF con &quot;ON&quot; sotto]
+</code></pre></div>
+*   Passare all’assetto Programmazione premendo ripetutamente il tasto <code>CHIAVE</code> fino a che sul display non compare il messaggio “PROGRAMMAZIONE”:
+    <div class="highlight"><pre><span></span><code>[Immagine di un tasto &quot;Chiave&quot; e un flusso verso &quot;PROGRAMMAZIONE&quot;]
+</code></pre></div>
+*   Accedere alla programmazione P699:
+    <div class="highlight"><pre><span></span><code>6   9   9   SubTotale
+</code></pre></div>
+*   Selezionare “MENU TECNICO” utilizzando i tasti con le frecce di selezione:
+    <div class="highlight"><pre><span></span><code>[Immagine di frecce di selezione] oppure [Immagine di un tasto &quot;00&quot;]
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>[MENU TECNICO]
+TIPO MENU
+</code></pre></div>
+*   Confermare l’operazione con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>↑_
+CODICE FISCALE
+</code></pre></div>
+*   Digitare il codice fiscale (16 caratteri) del tecnico abilitato che esegue la procedura di attivazione utilizzando il tastierino numerico. Ad ogni tasto corrisponde un set di caratteri (vedere legenda sul tasto). Premere ripetutamente un tasto per scorrere il set di caratteri ad esso associato.
+    <strong>NOTA:</strong>
+    Per cancellare un carattere inserito erroneamente premere il tasto C.
+    Per cancellare tutto quanto digitato premere due volte in sequenza il tasto C.
+*   Confermare con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>↑_
+CF/P.IVA CENTRO ASS.
+</code></pre></div>
+*   Digitare il codice fiscale (16 caratteri) o la partita IVA (11 caratteri) della società a cui il tecnico abilitato che esegue la procedura di attivazione risponde utilizzando il tastierino numerico. Ad ogni tasto corrisponde un set di caratteri (vedere legenda sul tasto). Premere ripetutamente un tasto per scorrere il set di caratteri ad esso associato.
+    <strong>NOTA:</strong>
+    Per cancellare un carattere inserito erroneamente premere il tasto C.
+    Per cancellare tutto quanto digitato premere due volte in sequenza il tasto C.
+    <strong>NOTA:</strong>
+    In tutte le condizioni nelle quali è prevista la digitazione di caratteri, sarà possibile forzare l’immissione dei soli caratteri numerici premendo una volta il tasto:
+    <div class="highlight"><pre><span></span><code>[Immagine di un tasto &quot;Chiave&quot;]
+</code></pre></div>
+    Premendo nuovamente il tasto sopra citato, tale modalità verrà disattivata e si tornerà alla modalità di immissione di caratteri alfanumerici. A conferma della modalità in cui ci si trova, a display compariranno le diciture “[NUMERIC]” oppure “[ALPHANUMERIC]”.
+*   Confermare con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Selezionare “ATTIVAZIONE” utilizzando i tasti con le frecce di selezione:
+    <div class="highlight"><pre><span></span><code>[Immagine di frecce di selezione] oppure [Immagine di un tasto &quot;00&quot;]
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>[ATTIVAZIONE]
+SELEZIONA SERVIZIO
+</code></pre></div>
+*   Confermare l’operazione con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>↑_
+CF/P.IVA GESTORE
+</code></pre></div>
+*   Digitare il codice fiscale (16 caratteri) o la partita IVA (11 caratteri) del gestore dell’esercizio commerciale utilizzando il tastierino numerico. Ad ogni tasto corrisponde un set di caratteri (vedere legenda sul tasto). Premere ripetutamente un tasto per scorrere il set di caratteri ad esso associato.
+    <strong>NOTA:</strong>
+    Per cancellare un carattere inserito erroneamente premere il tasto C.
+    Per cancellare tutto quanto digitato premere due volte in sequenza il tasto C.
+*   Confermare con il tasto:
+    <div class="highlight"><pre><span></span><code>SubTotale
+</code></pre></div>
+*   Sul display viene visualizzato:
+    <div class="highlight"><pre><span></span><code>ATTIVAZIONE
+IN CORSO \
+</code></pre></div>
+*   Durante l’operazione il LED lampeggerà nei colori verde/giallo ad intermittenza.
+    <div class="highlight"><pre><span></span><code>[Immagine di un LED che lampeggia]
+</code></pre></div>
+*   Alla fine della procedura, in caso di esito positivo, verrà emesso il seguente scontrino:
+    <div class="highlight"><pre><span></span><code>&lt;Nome Ditta&gt;
+&lt;Indirizzo&gt;
+&lt;Località&gt;
+&lt;Telefono - Fax&gt;
+------------------------------------
+ATTIVAZIONE
+------------------------------------
+&lt;ESITO POSITIVO&gt;
+
+codice http: &lt;#&gt;
+codice xml: &lt;#&gt;
+risp: attivazione ricevuta
+idoper: &lt;#&gt;
+01/01/24 12:00 &lt;#DOC. GES.&gt;
+NUMERO DI MATRICOLA &lt;matr. fiscale&gt;
+</code></pre></div>
+*   In occasione della prima operazione che si eseguirà con dispositivo attivato, verrà emesso il seguente scontrino:
+    <div class="highlight"><pre><span></span><code>GESTIONE LOTTERIA
+ATTIVATA!
+
+01/01/24 12:00 &lt;#DOC. GES.&gt;
+NUMERO DI MATRICOLA &lt;matr. fiscale&gt;
+</code></pre></div>
+    <div class="highlight"><pre><span></span><code>DOCUMENTO GESTIONALE
+
+&lt;Nome Ditta&gt;
+&lt;Indirizzo&gt;
+&lt;Località&gt;
+&lt;Telefono - Fax&gt;
+MESSA IN SERVIZIO
+COMPLETATA
+01/01/24 12:00 &lt;#DOC. GES.&gt;
+NUMERO DI MATRICOLA &lt;matr. fiscale&gt;
+</code></pre></div></p>
+<h2 id="7-applicazione-qr-code">7 APPLICAZIONE QR CODE</h2>
+<p>Completata la fase di attivazione, l’esercente dovrà scaricare dal sito https://telematici.agenziaentrate.gov.it (portale Fisconline) il QR code identificativo della macchina che deve essere stampato e applicato sul dispositivo D.Lgs 175/2015.</p>
+<div class="highlight"><pre><span></span><code>[Diagramma che mostra:
+- &quot;Fisconline&quot; che genera un &quot;QR code identificativo&quot;.
+- &quot;Esercente accreditato&quot; che riceve il &quot;QR code identificativo&quot;.
+- Il &quot;Registratore telematico RT (stato RT ATTIVATO)&quot; che riceve un &quot;QR code identificativo&quot; (presumibilmente stampato e applicato).
+]
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright Custom S.p.A 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

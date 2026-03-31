@@ -1,0 +1,2617 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Ivan Robuschi">
+      
+      
+        <link rel="canonical" href="https://github.com/ivanrobuschi-custom/P3N_RT.git/elettronica/">
+      
+      
+        <link rel="prev" href="../meccanica/">
+      
+      
+        <link rel="next" href="../ricerca-guasti/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>ELETTRONICA - Manuale tecnico P3N RT</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#elettronica" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="Manuale tecnico P3N RT" class="md-header__button md-logo" aria-label="Manuale tecnico P3N RT" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Manuale tecnico P3N RT
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ELETTRONICA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Condividi" aria-label="Condividi" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MANUALE ASSISTENZA P3-N RT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../generalita/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  GENERALITÀ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../meccanica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  MECCANICA
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ELETTRONICA
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ricerca-guasti/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  RICERCA GUASTI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../procedure/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MESSA IN SERVIZIO
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Manuale tecnico P3N RT" class="md-nav__button md-logo" aria-label="Manuale tecnico P3N RT" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    Manuale tecnico P3N RT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../index2/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MANUALE ASSISTENZA P3-N RT
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generalita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GENERALITÀ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meccanica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MECCANICA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ELETTRONICA
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ELETTRONICA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-generalita-del-circuito-elettrico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 GENERALITÀ DEL CIRCUITO ELETTRICO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-testina-di-stampa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 TESTINA DI STAMPA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-struttura-dispositivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 STRUTTURA DISPOSITIVO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-schema-interconnessione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 SCHEMA INTERCONNESSIONE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ingressi-e-uscite-scheda-di-controllo-dispositivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 INGRESSI E USCITE SCHEDA DI CONTROLLO DISPOSITIVO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alimentazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ALIMENTAZIONE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ALIMENTAZIONE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connettore-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CONNETTORE DISPLAY
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaccia-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INTERFACCIA USB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaccia-usb_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INTERFACCIA USB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaccia-seriale-rs232" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INTERFACCIA SERIALE RS232
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="INTERFACCIA SERIALE RS232">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collegamento-dispositivo-pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collegamento DISPOSITIVO &gt; PC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaccia-ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INTERFACCIA ETHERNET
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="INTERFACCIA ETHERNET">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collegamento-10100base-tx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collegamento 10/100Base-TX
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connettore-cassetto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CONNETTORE CASSETTO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CONNETTORE CASSETTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collegamento-dispositivo-cassetto-rendiresto-opzionale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collegamento DISPOSITIVO &gt; CASSETTO RENDIRESTO (opzionale)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meccanismo-di-stampa-j23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MECCANISMO DI STAMPA (J23)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motoresensori-meccanismo-di-stampa-j15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MOTORE/SENSORI MECCANISMO DI STAMPA (J15)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taglierina-j16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TAGLIERINA (J16)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensore-quasi-fine-carta-j24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SENSORE QUASI FINE CARTA (J24)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheda-sensore-fine-carta-j18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCHEDA SENSORE FINE CARTA (J18)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memoria-permanente-di-riepilogo-j7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MEMORIA PERMANENTE DI RIEPILOGO (J7)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p3-n-wi-fi-p3-n-bt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P3-N WI-FI, P3-N BT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheda-wi-fi-bluetooth-j19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCHEDA WI-FI / BLUETOOTH (J19)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheda-micro-sd-esterna-j1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCHEDA MICRO SD ESTERNA (J1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sostituzione-fusibile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 SOSTITUZIONE FUSIBILE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-layout-scheda-di-controllo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 LAYOUT SCHEDA DI CONTROLLO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-schemi-elettrici" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 SCHEMI ELETTRICI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 SCHEMI ELETTRICI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pagina-48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 48
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 49
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 50
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 51
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 52
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 53
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 54
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 55
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ricerca-guasti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RICERCA GUASTI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../procedure/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MESSA IN SERVIZIO
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-generalita-del-circuito-elettrico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 GENERALITÀ DEL CIRCUITO ELETTRICO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-testina-di-stampa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 TESTINA DI STAMPA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-struttura-dispositivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 STRUTTURA DISPOSITIVO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-schema-interconnessione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 SCHEMA INTERCONNESSIONE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ingressi-e-uscite-scheda-di-controllo-dispositivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 INGRESSI E USCITE SCHEDA DI CONTROLLO DISPOSITIVO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alimentazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ALIMENTAZIONE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ALIMENTAZIONE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connettore-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CONNETTORE DISPLAY
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaccia-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INTERFACCIA USB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaccia-usb_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INTERFACCIA USB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaccia-seriale-rs232" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INTERFACCIA SERIALE RS232
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="INTERFACCIA SERIALE RS232">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collegamento-dispositivo-pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collegamento DISPOSITIVO &gt; PC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaccia-ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INTERFACCIA ETHERNET
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="INTERFACCIA ETHERNET">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collegamento-10100base-tx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collegamento 10/100Base-TX
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connettore-cassetto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CONNETTORE CASSETTO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CONNETTORE CASSETTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collegamento-dispositivo-cassetto-rendiresto-opzionale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collegamento DISPOSITIVO &gt; CASSETTO RENDIRESTO (opzionale)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meccanismo-di-stampa-j23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MECCANISMO DI STAMPA (J23)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motoresensori-meccanismo-di-stampa-j15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MOTORE/SENSORI MECCANISMO DI STAMPA (J15)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taglierina-j16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TAGLIERINA (J16)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensore-quasi-fine-carta-j24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SENSORE QUASI FINE CARTA (J24)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheda-sensore-fine-carta-j18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCHEDA SENSORE FINE CARTA (J18)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memoria-permanente-di-riepilogo-j7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MEMORIA PERMANENTE DI RIEPILOGO (J7)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p3-n-wi-fi-p3-n-bt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        P3-N WI-FI, P3-N BT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheda-wi-fi-bluetooth-j19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCHEDA WI-FI / BLUETOOTH (J19)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheda-micro-sd-esterna-j1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCHEDA MICRO SD ESTERNA (J1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sostituzione-fusibile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 SOSTITUZIONE FUSIBILE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-layout-scheda-di-controllo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 LAYOUT SCHEDA DI CONTROLLO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-schemi-elettrici" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 SCHEMI ELETTRICI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 SCHEMI ELETTRICI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pagina-48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 48
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 49
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 50
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 51
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 52
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 53
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 54
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina-55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagina 55
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="elettronica">ELETTRONICA</h1>
+<blockquote>
+<p>ATTENZIONE: PRIMA DI PROCEDERE CON QUALSIASI OPERAZIONE, LEGGERE ACCURATAMENTE LE AVVERTENZE ELENCATE ALL’INIZIO DI QUESTO DOCUMENTO</p>
+</blockquote>
+<h2 id="1-generalita-del-circuito-elettrico">1 GENERALITÀ DEL CIRCUITO ELETTRICO</h2>
+<p>La scheda di controllo può essere divisa in due blocchi principali:</p>
+<ul>
+<li><strong>Controllore</strong>: gestisce tutte le operazioni della macchina. È formato da una CPU con architettura interna a 32 bit (con al suo interno una memoria flash da 2 MB ed una RAM statica da 64 kB), da una memoria flash seriale da 4 MB e da una SDRAM da 8 MB.</li>
+<li><strong>Interfaccia</strong>: ha la funzione di rendere disponibile: sul connettore J11 i segnali per il collegamento all’interfaccia RS232, sui connettori J8 e J10 i segnali per il collegamento all’interfaccia USB, sul connettore J13 i segnali per il collegamento all’interfaccia Ethernet, sul connettore J4 i segnali per il collegamento al cassetto rendiresto e sul connettore J5 i segnali per il collegamento al display esterno.</li>
+</ul>
+<h2 id="2-testina-di-stampa">2 TESTINA DI STAMPA</h2>
+<p>La posizione della testina di stampa, è progettata allo scopo di mantenere la linea degli elementi riscaldanti tangente al rullo di trascinamento della carta. L’uniformità di stampa è ottenuta tramite molle che garantiscono la corretta pressione della testina sulla carta.</p>
+<p>La stampa avviene attraverso le seguenti fasi:
+* I segnali di controllo della testina forniscono le informazioni sulla quantità di energia che ciascun elemento riscaldante dovrà generare.
+* L’elemento riscaldante (resistenza) genera calore localizzato in un preciso punto (dot).
+* Il calore generato, trasmesso alla superficie della carta termosensibile, causa la colorazione di quest’ultima.</p>
+<p><strong>SEGNALI DI CONTROLLO DELLA TESTINA DI STAMPA:</strong>
+I dati vengono trasferiti alla testina di stampa tramite una seriale sincrona (DATA IN / CLOCK / DATA OUT) in uno Shift Register.
+Al completamento della trasmissione dei dati, è necessario attivare il Latch per eseguire la copia dei dati trasferiti verso il registro di riscaldamento. Questo permette di eseguire contemporaneamente la trasmissione e il riscaldamento.
+In seguito all’attivazione dei segnali di Strobe i dati memorizzati nel registro di Latch eccitano gli elementi riscaldanti. La temperatura della testina è controllata tramite un termistore.</p>
+<ul>
+<li>(Diagramma a blocchi della testina di stampa con segnali VH, GND, TM, VDD, STB2, STB1, LATCH, DATA IN, CLOCK, DATA OUT, LATCH REGISTER, BIT SHIFT REGISTER)*</li>
+</ul>
+<h2 id="3-struttura-dispositivo">3 STRUTTURA DISPOSITIVO</h2>
+<ul>
+<li>(Diagramma a blocchi che mostra la CPU (FLASH INTERNA 2 MB, RAM INTERNA 128 kB) interconnessa tramite BUS con SDRAM 8 MB e FLASH SPI 8 MB. La CPU è collegata a vari moduli e connettori: DRIVER TAGLIERINA, TESTINA DI STAMPA, CONTROLLORE DI RESET, SENSORI, TASTI, MOTORE PASSO PASSO, DRIVER MOTORE, CONNETTORE INTERFACCIA RS232, TRANSCEIVER RS232, CONNETTORE INTERFACCIA ETHERNET, TRANSCEIVER ETHERNET, CONNETTORE INTERFACCIA USB HOST, CONNETTORE INTERFACCIA USB DEVICE, MEMORIA PERMANENTE DI RIEPILOGO, MEMORIA PERMANENTE DI DETTAGLIO, MICRO SD ESTERNA, CONNETTORE CASSETTO RENDIRESTO, CONNETTORE DISPLAY ESTERNO, e un modulo opzionale WI-FI / BLUETOOTH.)*</li>
+</ul>
+<h2 id="4-schema-interconnessione">4 SCHEMA INTERCONNESSIONE</h2>
+<ul>
+<li>
+<p>(diagramma che illustra le interconnessioni tra la SCHEDA DI CONTROLLO e i vari componenti esterni e interni. La SCHEDA DI CONTROLLO (con connettori J13, J10, J4, J22, J23, J24, J7, J16, J15, J2, J26, J11, J5, J8, J27, J18, J19, SW2, SW7, SW1, DL2, SW6) è collegata a:)*</p>
+</li>
+<li>
+<p><strong>CONNETTORE ETHERNET</strong></p>
+</li>
+<li><strong>CONNETTORE USB</strong> (due porte)</li>
+<li><strong>CONNETTORE SERIALE RS232</strong></li>
+<li><strong>CONNETTORE DISPLAY ESTERNO</strong></li>
+<li><strong>CONNETTORE CASSETTO</strong></li>
+<li><strong>CONNETTORE ALIMENTAZIONE</strong></li>
+<li><strong>MECCANISMO DI STAMPA</strong></li>
+<li><strong>SENSORE QUASI FINE CARTA</strong></li>
+<li><strong>TESTINA DI STAMPA</strong></li>
+<li><strong>TAGLIERINA</strong></li>
+<li><strong>MOTORE / SENSORI MECCANISMO DI STAMPA</strong></li>
+<li><strong>LED DI STATO</strong></li>
+<li><strong>TASTO ON/OFF</strong></li>
+<li><strong>TASTO FEED</strong></li>
+<li><strong>SENSORE FINE CARTA</strong></li>
+<li><strong>SCHEDA MEMORIA PERMANENTE DI RIEPILOGO</strong></li>
+<li><strong>SCHEDA WI-FI / BLUETOOTH</strong> (opzionale, con connettori J1, J3)</li>
+</ul>
+<h2 id="5-ingressi-e-uscite-scheda-di-controllo-dispositivo">5 INGRESSI E USCITE SCHEDA DI CONTROLLO DISPOSITIVO</h2>
+<h2 id="alimentazione">ALIMENTAZIONE</h2>
+<p>Connettore tripolare femmina (J22)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">+24 Vdc</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Frame GND</td>
+</tr>
+</tbody>
+</table>
+<p>L’immagine seguente mostra la piedinatura del connettore del cavo di alimentazione da utilizzare per il dispositivo:
+<em>(Immagine di un connettore tripolare maschio con n.c., +24 V e GND)</em></p>
+<blockquote>
+<p>ATTENZIONE: Rispettare la polarità dell’alimentazione.</p>
+</blockquote>
+<h3 id="connettore-display">CONNETTORE DISPLAY</h3>
+<p>Connettore telefonico femmina (J5)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+<th style="text-align: left;">Direzione</th>
+<th style="text-align: left;">Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">TX2</td>
+<td style="text-align: left;">(out)</td>
+<td style="text-align: left;">Comando display</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">+24 VT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">RX2</td>
+<td style="text-align: left;">(in)</td>
+<td style="text-align: left;">Stato display</td>
+</tr>
+</tbody>
+</table>
+<h3 id="interfaccia-usb">INTERFACCIA USB</h3>
+<p>Connettore USB type A femmina (J10)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+<th style="text-align: left;">Direzione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">VBUS-A</td>
+<td style="text-align: left;">(in)</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">HD-</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">HD+</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">SH1</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">SH2</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">SH3</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">SH4</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="interfaccia-usb_1">INTERFACCIA USB</h3>
+<p>Connettore USB type B femmina (J8)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+<th style="text-align: left;">Direzione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">VBUS-B</td>
+<td style="text-align: left;">(in)</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">DD-</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">DD+</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">SH1</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">SH2</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="interfaccia-seriale-rs232">INTERFACCIA SERIALE RS232</h3>
+<p>Connettore RJ45 femmina (J11)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+<th style="text-align: left;">Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">RT1</td>
+<td style="text-align: left;">Quando è “1”, il dispositivo è pronto per ricevere.</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CT1</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">DTR1</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">n.c.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">RX1</td>
+<td style="text-align: left;">Durante la ricezione assume i valori “0” e “1” in funzione dei dati.</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">TX1</td>
+<td style="text-align: left;">Durante la trasmissione assume i valori “0” e “1” in funzione dei dati.</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">DTR1</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Poiché siamo in presenza dello standard RS232, al valore logico “0” è associato il valore di tensione +VRS232 (valore di tensione compreso tra +3 Vdc e +15 Vdc) mentre al valore logico “1” è associato il valore di tensione -VRS232 (valore di tensione compreso tra -3 Vdc e -15 Vdc).</p>
+<h4 id="collegamento-dispositivo-pc">Collegamento DISPOSITIVO &gt; PC</h4>
+<p>Nell’immagine seguente è riportato lo schema di un cavo seriale RJ45-DB9 per collegare il dispositivo ad un personal computer (PC) mediante il connettore seriale RS232 a 9 poli:
+<em>(Diagramma di collegamento RJ45 (DISPOSITIVO) a DB9 (PC) con pinout specifici per RTS, CTS, DTR, +VI, RXD, GND, TXD, DCD, RI, DSR)</em></p>
+<p>Nel caso di utilizzo di un cavo seriale, si consiglia il montaggio di una ferrite sulla parte terminale dello stesso cavo.</p>
+<h3 id="interfaccia-ethernet">INTERFACCIA ETHERNET</h3>
+<p>Connettore RJ45 femmina (J13)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">ETH_RXP</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">+3.3VE</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">ETH_RXN</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">ETH_TXP</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">+3.3V</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">ETH_TXN</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">n.c.</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">+3.3V</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">LED_LINK</td>
+</tr>
+<tr>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">+3.3V</td>
+</tr>
+<tr>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">LED-LAN</td>
+</tr>
+<tr>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">SH1</td>
+</tr>
+<tr>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">SH2</td>
+</tr>
+</tbody>
+</table>
+<p>Le funzioni dei due LED sono indicate nelle seguenti tabelle:</p>
+<h4 id="collegamento-10100base-tx">Collegamento 10/100Base-TX</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">LED</th>
+<th style="text-align: left;">FUNZIONE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">LED-LNK</td>
+<td style="text-align: left;">Link: il LED (di colore giallo) si accende quando è attiva una connessione</td>
+</tr>
+<tr>
+<td style="text-align: left;">LED-LAN</td>
+<td style="text-align: left;">Rx/Tx: il LED (di colore verde) si accende quando vengono ricevuti o trasmessi dei dati.</td>
+</tr>
+</tbody>
+</table>
+<p>Il dispositivo riconosce automaticamente il tipo di connessione (cross o pin-to-pin). La piedinatura riportata in tabella è relativa ai segnali in ingresso al componente J13, prima del trasformatore di isolamento (through-hole pin).</p>
+<h3 id="connettore-cassetto">CONNETTORE CASSETTO</h3>
+<p>Connettore RJ12 femmina (J4)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CASS1</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">IN-CASS</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">+24VM</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">CASS2</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">GND</td>
+</tr>
+</tbody>
+</table>
+<p>Il solenoide del cassetto 1 deve essere collegato dal Pin 2 al Pin 4 del connettore del cassetto.
+Il solenoide del cassetto 2 deve essere collegato dal Pin 4 al Pin 5 del connettore del cassetto.
+<em>(Diagramma di collegamento PIN 2, PIN 4, PIN 5 per CASSETTO 1 e CASSETTO 2)</em></p>
+<h4 id="collegamento-dispositivo-cassetto-rendiresto-opzionale">Collegamento DISPOSITIVO &gt; CASSETTO RENDIRESTO (opzionale)</h4>
+<p>Utilizzare un cavo adattatore RJ12-Jack opzionale per collegare il dispositivo ad un cassetto rendiresto. Per la disposizione dei segnali sui pin, fare riferimento al seguente schema:
+<em>(Diagramma di collegamento RJ12 (DISPOSITIVO) a JACK (CASSETTO RENDIRESTO) con pinout per SOL1, +24Vdc, SOL2)</em></p>
+<h3 id="meccanismo-di-stampa-j23">MECCANISMO DI STAMPA (J23)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">+24VT</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">+24VT</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">+24VT</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">+24VT</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">HD-DATA</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">DI-DO</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">STB2</td>
+</tr>
+<tr>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">HD-TEMP</td>
+</tr>
+<tr>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">+3.3V</td>
+</tr>
+<tr>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">HD-LATCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">HD-SCK</td>
+</tr>
+<tr>
+<td style="text-align: left;">17</td>
+<td style="text-align: left;">STB1</td>
+</tr>
+<tr>
+<td style="text-align: left;">18</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">19</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">21</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">22</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">23</td>
+<td style="text-align: left;">DI-DO</td>
+</tr>
+<tr>
+<td style="text-align: left;">24</td>
+<td style="text-align: left;">n.c.</td>
+</tr>
+<tr>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">+24VT</td>
+</tr>
+<tr>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">+24VT</td>
+</tr>
+<tr>
+<td style="text-align: left;">27</td>
+<td style="text-align: left;">+24VT</td>
+</tr>
+<tr>
+<td style="text-align: left;">28</td>
+<td style="text-align: left;">+24VT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="motoresensori-meccanismo-di-stampa-j15">MOTORE/SENSORI MECCANISMO DI STAMPA (J15)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">MOT2B</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">MOT1B</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">MOT2A</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">MOT1A</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">VLED-SENS</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">PAPER</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">HEAD-UP</td>
+</tr>
+</tbody>
+</table>
+<h3 id="taglierina-j16">TAGLIERINA (J16)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">MCUT-</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">MCUT+</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">SIG-CUT</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">GND</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sensore-quasi-fine-carta-j24">SENSORE QUASI FINE CARTA (J24)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+<th style="text-align: left;">Direzione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">VLED-SENS</td>
+<td style="text-align: left;">(in)</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">NPE</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">+VNPE</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="scheda-sensore-fine-carta-j18">SCHEDA SENSORE FINE CARTA (J18)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">+VBM</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">NOTCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">VLED_BM</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">GND</td>
+</tr>
+</tbody>
+</table>
+<h3 id="memoria-permanente-di-riepilogo-j7">MEMORIA PERMANENTE DI RIEPILOGO (J7)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+<th style="text-align: left;">Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">MF-WE</td>
+<td style="text-align: left;">Abilita scrittura.</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">SSPI7-DI</td>
+<td style="text-align: left;">Durante l’accesso alla memoria permanente di riepilogo assume i valori 0 V e 3.3 V.</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">SSPI7-CSMF</td>
+<td style="text-align: left;">Durante l’accesso alla memoria permanente di riepilogo assume i valori 0 V e 3.3 V.</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">REG5_3V3</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">REG5_3V3</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">MF-HOLD</td>
+<td style="text-align: left;">TTL 3.3V.</td>
+</tr>
+<tr>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">SSPI7-CK</td>
+<td style="text-align: left;">Durante l’accesso alla memoria permanente di riepilogo assume i valori 0 V e 3.3 V.</td>
+</tr>
+<tr>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">SSPI7-DO</td>
+<td style="text-align: left;">Durante l’accesso alla memoria permanente di riepilogo assume i valori 0 V e 3.3 V.</td>
+</tr>
+<tr>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="p3-n-wi-fi-p3-n-bt">P3-N WI-FI, P3-N BT</h3>
+<h3 id="scheda-wi-fi-bluetooth-j19">SCHEDA WI-FI / BLUETOOTH (J19)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">+3.3V</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">RXD_ESP32</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">TXD_ESP32</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">CTS_ESP32</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">RTS_ESP32</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">IRQ_ESP32</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">EN_ESP32</td>
+</tr>
+<tr>
+<td style="text-align: left;">SH1</td>
+<td style="text-align: left;">GND</td>
+</tr>
+<tr>
+<td style="text-align: left;">SH2</td>
+<td style="text-align: left;">GND</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scheda-micro-sd-esterna-j1">SCHEDA MICRO SD ESTERNA (J1)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pin</th>
+<th style="text-align: left;">Segnale</th>
+<th style="text-align: left;">Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">n.c.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">SPI1-CS-SD1</td>
+<td style="text-align: left;">Durante l’accesso alla Micro SD card, assume i valori 0 V e 3.3 V.</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">SPI1-DO</td>
+<td style="text-align: left;">Durante l’accesso alla Micro SD card, assume i valori 0 V e 3.3 V.</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">+VFEJ</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">SPI1-CK</td>
+<td style="text-align: left;">Durante l’accesso alla Micro SD card, assume i valori 0 V e 3.3 V.</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">SPI1-DI</td>
+<td style="text-align: left;">Durante l’accesso alla Micro SD card, assume i valori 0 V e 3.3 V.</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">n.c.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">SD1-IN</td>
+<td style="text-align: left;">Assume i valori 0 V (Micro SD card inserita) e 3.3 V (Micro SD card non inserita).</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">GND</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-sostituzione-fusibile">6 SOSTITUZIONE FUSIBILE</h2>
+<blockquote>
+<p>ATTENZIONE: Prima di effettuare la sostituzione del fusibile accertarsi di avere scollegato il cavo di alimentazione dal dispositivo.</p>
+</blockquote>
+<p>Per accedere al fusibile, che si trova sulla scheda di controllo del dispositivo vicino al connettore di alimentazione, procedere come segue:</p>
+<ul>
+<li>Smontare il dispositivo seguendo la procedura descritta nella sezione MECCANICA al capitolo 10.</li>
+<li>Dissaldare il fusibile ai suoi capi, facendo attenzione a non scaldare eccessivamente i componenti vicini, per non danneggiarli.</li>
+<li>Sostituirlo con un fusibile Bussmann-Eaton cod. 6125TD5-R/TR1 (5 A, 60 Vdc / 125 Vac ritardato) o equivalente.</li>
+</ul>
+<p><em>(Immagine della SCHEDA DI CONTROLLO con l'indicazione del fusibile F2)</em></p>
+<h2 id="7-layout-scheda-di-controllo">7 LAYOUT SCHEDA DI CONTROLLO</h2>
+<ul>
+<li>(Questa sezione presenta due diagrammi del layout della scheda di controllo: "lato componenti" e "lato saldature". I diagrammi mostrano la disposizione dei vari componenti elettronici e le tracce di saldatura sulla scheda. Non è possibile estrarre il testo dettagliato di tutti i componenti e le tracce da queste immagini.)*</li>
+</ul>
+<h2 id="8-schemi-elettrici">8 SCHEMI ELETTRICI</h2>
+<ul>
+<li>(Questa sezione contiene diversi schemi elettrici dettagliati del dispositivo. Non è possibile estrarre il testo dettagliato di tutti i circuiti e i valori dei componenti da queste immagini, ma si può descrivere il contenuto generale di ciascuna pagina.)*</li>
+</ul>
+<h3 id="pagina-48">Pagina 48</h3>
+<ul>
+<li><strong>Schema principale della CPU</strong>: Mostra le connessioni della CPU (U1A, U1B) con i vari pinout (PDx, PEx, PGx, PAx, PBx, PCx, P6x, P4x, USBx_D+, USBx_D-, P3x, P0x, P1x, P2x, P5x, P7x, P8x, PFx, PJx), alimentazione (VCC, GND, AVCC, AGND, VREFH, VREFL, USB-VCC, USB-GND), e segnali di controllo (RESET, XTAL, EXTAL, EMLE, XCIN, XCOUT, VCL, BSCANP, MD/FINED).</li>
+<li><strong>HW CONFIGURATION</strong>: Una tabella con ID0, ID1, ID2 e REVISION.</li>
+<li><strong>SDRAM (U29)</strong>: Schema di una SDRAM da 8MBytes con pinout (A0-A12, D0-D15, VSSQ, OE, WE, CAS, VCC, RAS, GND, UDQM, CLK, CKE, BA0, BA1, VDDQ, NC/RFU).</li>
+<li><strong>Flash (U7)</strong>: Schema di una memoria Flash da 8MBytes con pinout (CS, S0, WP, SI, VCC, HOLD, SCK, GND).</li>
+<li><strong>Shift Registers (U4, U30)</strong>: Schemi di shift register con pinout (D0-D7, Q0-Q7, CLK, OC, VCC, GND).</li>
+</ul>
+<h3 id="pagina-49">Pagina 49</h3>
+<ul>
+<li><strong>DRAWER</strong>: Schema del connettore J4 per il cassetto rendiresto, con pinout (GND, DRW1/TX, SIG1, +VDRW, DRW2, GND) e circuiti di controllo (Q24, Q25, D2, D31, L7, L29, R316, R315, R348, R350, C73, C78, C79, C265).</li>
+<li><strong>CUSTOMER DISPLAY</strong>: Schema del connettore J5 per il display esterno, con pinout (GND, TXD(O), PWR(O), RXD(I)) e circuiti di interfaccia RS232 (U3, U16E, U2A, U2B, R28, R31, R32, R33, R342, R351, C71, C72, C74, C75, C76, C77, C264, C217).</li>
+</ul>
+<h3 id="pagina-50">Pagina 50</h3>
+<ul>
+<li><strong>JTAG (RX63N)</strong>: Schema del connettore J6 per JTAG con pinout (TCK, GND, TRST, EMLE, TDO, BSCAN, MD/FIN, +3.3V, TDI, RESET, GND, PC7, TMS, GND) e resistenze/condensatori associati.</li>
+<li><strong>EXTERNAL SD CARD (J1)</strong>: Schema del connettore J1 per Micro SD esterna con pinout (CD/DATA3(CS), CMD(DI), VCC, CLK, GND, DAT0(DO), DAT1(RSV), CD-GND, CD, DAT2(NC), FIX1-FIX4) e circuiti di protezione (Q1, R61, C61, C62, R18, R86, C54).</li>
+<li><strong>INTERNAL SD CARD (J2)</strong>: Schema del connettore J2 per Micro SD interna con pinout simile a J1 e circuiti di protezione (Q2, R90, R161, R176, R177, C89, C55, C256, C257, L8, R386).</li>
+<li><strong>ON BOARD PROGRAMMING (RX63N)</strong>: Connettore J31 con pinout (VBUS, USB_D-, USB_D+, GND, NC, MD/FIN, +3.3V) e resistenze/condensatori associati.</li>
+<li><strong>SETUP DIP-SWITCH (SW6)</strong>: Schema del dip-switch SW6 con 10 posizioni e resistenze/condensatori associati.</li>
+</ul>
+<h3 id="pagina-51">Pagina 51</h3>
+<ul>
+<li><strong>USB1 INTERFACE (DEVICE)</strong>: Schema del connettore J10 (USB-A) con pinout (VBUS, DN, DP, GND, SH1-SH4) e circuiti di protezione e interfaccia (U6, U16A, U16F, R73, R76, R77, R116, R117, R374, R394, R395, R398, C65, C111, C115, C116, C117, C119, C171, C309, C315, L10, D35B, D35C, D35A).</li>
+<li><strong>USB0 INTERFACE (HOST)</strong>: Schema del connettore J8 (USB-B) con pinout (VBUS, DN, DP, GND, SH1, SH2) e circuiti di protezione e interfaccia (U36, U37, R79, R115, R396, R397, R405, R406, C66, C67, C106, C109, C114, C118, C251, L9).</li>
+<li><strong>RS232 INTERFACE</strong>: Schema del connettore J11 (RJ45) con pinout (RTS(O), CTS(I), DTR(O), GND, PWR(O), RXD(I), TXD(O), DTR(O), SH1, SH2) e circuiti di interfaccia (U12, R112, R113, C112, C113, C290, D40).</li>
+</ul>
+<h3 id="pagina-52">Pagina 52</h3>
+<ul>
+<li><strong>ETHERNET INTERFACE (10/100)</strong>: Schema del connettore J13 (RJ45) con pinout (ETH_RXP, +3.3VE, ETH_RXN, ETH_TXP, +3.3V, ETH_TXN, n.c., GND, +3.3V, LED_LINK, +3.3V, LED-LAN, SH1, SH2) e circuiti di interfaccia (U35, U23A, U23B, U23C, U23D, R4, R5, R132, R135, R144, R147, R148, R149, R150, R153, C10, C94, C96, C104, C107, C110, C120, C124, C125, C126, C132, C133, C134, C135, C310, C311, C312, C313, X3). Include anche i LED LINK e ACT.</li>
+</ul>
+<h3 id="pagina-53">Pagina 53</h3>
+<ul>
+<li><strong>PRINTER MECHANISM (OPOS TP347)</strong>: Schemi dettagliati per la testina di stampa, motori/sensori e taglierina.</li>
+<li><strong>PRINTHEAD</strong>: Connettore J23 con pinout (HD-DATA, DI-DO, GND, STB2, HD-TEMP, +3.3V, HD-LATCH, HD-SCK, STB1, GND, DI-DO, +24VT) e circuiti di controllo (U15, R195, R196, R198, R199, R201, C174, C175, C176, C177, L17, L18, L19, L20, D39B, D39C).<ul>
+<li><strong>MOTOR/SENSORS</strong>: Connettore J15 con pinout (MOT2B, MOT1B, MOT2A, MOT1A, VLED-SENS, PAPER, GND, HEAD-UP) e circuiti di controllo (U17, R11, R13, R190, R191, R192, R193, R321, R387, R388, C12, C17, C19, C164, C166, C167, C168, C169, C172, C173, C179, C180, C181, C182, D11A, D11B, D11C, D12A, D12B, D13A, D13B, D14A, D14B, L14, L15, L16).</li>
+<li><strong>CUTTER</strong>: Connettore J16 con pinout (MCUT-, MCUT+, SIG-CUT, GND) e circuiti di controllo (Q5, R202, R194, C170, C178).</li>
+<li><strong>PRINTHEAD STROBE CONFIGURATION</strong>: Tabella per la configurazione dello strobe (A, B, NO, YES, HIGH, LOW).</li>
+</ul>
+</li>
+</ul>
+<h3 id="pagina-54">Pagina 54</h3>
+<ul>
+<li><strong>BATTERY</strong>: Schema della batteria BT2 (3V, 1AH) con diodo D15 e resistenza R221.</li>
+<li><strong>ON/OFF SWITCH</strong>: Schema dell'interruttore SW1 con resistenze R234, R220, C51.</li>
+<li><strong>FEED SWITCH</strong>: Schema dell'interruttore SW2 con resistenze R230, R223, C52.</li>
+<li><strong>STATUS LED</strong>: Schema dei LED (DL2) con resistenze R216, R217, R323, R324, R325, R326, R327, R328, R329, R380, R381, R393, C191, C192, C193, C195, C272, C273, C274, C275, C278, C279, L23, L24, L32, Q6, Q7, Q8, Q9, U18, D36A, D36B.</li>
+<li><strong>BUZZER</strong>: Schema del buzzer BZ1 con U34 e resistenze R343, R345, C306.</li>
+<li><strong>WI-FI/BLUETOOTH MODULE BOARD</strong>: Connettore J19 con pinout (+3.3V, GND, RXD_ESP32, TXD_ESP32, CTS_ESP32, RTS_ESP32, IRQ_ESP32, EN_ESP32, SH1, SH2).</li>
+<li><strong>NEAR PAPER END SENSOR (OUT07)</strong>: Connettore J24 con pinout (VLED, GND, SIGN, +VDD) e resistenze/condensatori.</li>
+<li><strong>NOTCH SENSOR/NPE BLACK MARK SENSOR BOARD (ST144-FC1)</strong>: Connettore J18 con pinout (VLED, GND, SIGN, +VDD, SH1, SH2) e resistenze/condensatori.</li>
+<li><strong>NOTCH OPTION</strong>: Jumper JP1.</li>
+</ul>
+<h3 id="pagina-55">Pagina 55</h3>
+<ul>
+<li><strong>POWER SUPPLY</strong>: Connettore di alimentazione J22 con pinout (GND, +24V, GND, Frame GND) e circuiti di regolazione (U21, U33, U27A, U27B, U28A, U28B, U22A, U22B, R211, R258, R259, R260, R262, R263, R265, R267, R269, R271, R272, R273, R274, R276, R278, R279, R280, R281, R333, R337, R339, R340, R341, R353, R354, R355, R356, R389, R390, R391, R392, R407, R411, C20, C21, C204, C205, C207, C208, C209, C210, C211, C212, C213, C215, C218, C219, C220, C221, C222, C223, C224, C225, C226, C227, C228, C229, C230, C231, C270, C282, C283, C287, C303, C304, L25, L26, L27, D9A, D9B, D9C, D17, D29A, D29B, D29C, D39A, D39C, Q15, Q16, Q22, Q26, Q28, Q30, F2).</li>
+<li><strong>SHIELDED CABLE</strong>: Connettore J26 con pinout (SH1, SH2).</li>
+<li><strong>FIDUCIALS MARK</strong>: Punti di riferimento FID1, FID2, FID3.</li>
+<li><strong>MOUNTING PADS</strong>: Punti di montaggio.</li>
+<li><strong>MECHANICAL HOLES</strong>: Fori meccanici MTH1-MTH12.</li>
+<li><strong>GND SHIELD</strong>: Punti di messa a terra.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../meccanica/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: MECCANICA">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                MECCANICA
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ricerca-guasti/" class="md-footer__link md-footer__link--next" aria-label="Successivo: RICERCA GUASTI">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                RICERCA GUASTI
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright Custom S.p.A 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

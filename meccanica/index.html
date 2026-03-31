@@ -1,0 +1,1323 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Ivan Robuschi">
+      
+      
+        <link rel="canonical" href="https://github.com/ivanrobuschi-custom/P3N_RT.git/meccanica/">
+      
+      
+        <link rel="prev" href="../generalita/">
+      
+      
+        <link rel="next" href="../elettronica/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>MECCANICA - Manuale tecnico P3N RT</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#meccanica" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="Manuale tecnico P3N RT" class="md-header__button md-logo" aria-label="Manuale tecnico P3N RT" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Manuale tecnico P3N RT
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MECCANICA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Condividi" aria-label="Condividi" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MANUALE ASSISTENZA P3-N RT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../generalita/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  GENERALITÀ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  MECCANICA
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../elettronica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ELETTRONICA
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ricerca-guasti/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  RICERCA GUASTI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../procedure/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MESSA IN SERVIZIO
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Manuale tecnico P3N RT" class="md-nav__button md-logo" aria-label="Manuale tecnico P3N RT" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    Manuale tecnico P3N RT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../index2/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MANUALE ASSISTENZA P3-N RT
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generalita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GENERALITÀ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MECCANICA
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MECCANICA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-parti-disponibili" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 PARTI DISPONIBILI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-rimozione-etichetta-antieffrazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 RIMOZIONE ETICHETTA ANTIEFFRAZIONE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-applicazione-etichetta-antieffrazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 APPLICAZIONE ETICHETTA ANTIEFFRAZIONE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sostituzione-coperchio-taglierina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 SOSTITUZIONE COPERCHIO TAGLIERINA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-rimozione-gruppo-stampante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 RIMOZIONE GRUPPO STAMPANTE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sostituzione-tasto-feed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 SOSTITUZIONE TASTO FEED
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-sostituzione-tasto-onoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 SOSTITUZIONE TASTO ON/OFF
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-sostituzione-tasto-apertura-coperchio-vano-carta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 SOSTITUZIONE TASTO APERTURA COPERCHIO VANO CARTA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-sostituzione-gruppo-di-stampa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 SOSTITUZIONE GRUPPO DI STAMPA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-sostituzione-scheda-di-controllo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 SOSTITUZIONE SCHEDA DI CONTROLLO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-sostituzione-coperchio-vano-carta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 SOSTITUZIONE COPERCHIO VANO CARTA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-sostituzione-scheda-wi-fibluetooth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 SOSTITUZIONE SCHEDA WI-FI/BLUETOOTH
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-sostituzione-memoria-permanente-di-dettaglio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13 SOSTITUZIONE MEMORIA PERMANENTE DI DETTAGLIO
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elettronica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ELETTRONICA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ricerca-guasti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RICERCA GUASTI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../procedure/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MESSA IN SERVIZIO
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-parti-disponibili" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 PARTI DISPONIBILI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-rimozione-etichetta-antieffrazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 RIMOZIONE ETICHETTA ANTIEFFRAZIONE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-applicazione-etichetta-antieffrazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 APPLICAZIONE ETICHETTA ANTIEFFRAZIONE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sostituzione-coperchio-taglierina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 SOSTITUZIONE COPERCHIO TAGLIERINA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-rimozione-gruppo-stampante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 RIMOZIONE GRUPPO STAMPANTE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sostituzione-tasto-feed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 SOSTITUZIONE TASTO FEED
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-sostituzione-tasto-onoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 SOSTITUZIONE TASTO ON/OFF
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-sostituzione-tasto-apertura-coperchio-vano-carta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 SOSTITUZIONE TASTO APERTURA COPERCHIO VANO CARTA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-sostituzione-gruppo-di-stampa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 SOSTITUZIONE GRUPPO DI STAMPA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-sostituzione-scheda-di-controllo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 SOSTITUZIONE SCHEDA DI CONTROLLO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-sostituzione-coperchio-vano-carta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 SOSTITUZIONE COPERCHIO VANO CARTA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-sostituzione-scheda-wi-fibluetooth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 SOSTITUZIONE SCHEDA WI-FI/BLUETOOTH
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-sostituzione-memoria-permanente-di-dettaglio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13 SOSTITUZIONE MEMORIA PERMANENTE DI DETTAGLIO
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="meccanica">MECCANICA</h1>
+<p>ATTENZIONE: PRIMA DI PROCEDERE CON QUALSIASI OPERAZIONE, LEGGERE ACCURATAMENTE LE AVVERTENZE ELENCATE ALL’INIZIO DI QUESTO DOCUMENTO</p>
+<h2 id="1-parti-disponibili">1 PARTI DISPONIBILI</h2>
+<p>Per la lista dei codici delle singole parti fornite come ricambi, fare riferimento al catalogo parti di ricambio del dispositivo.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">PARTI FORNITE COME RICAMBI</th>
+<th style="text-align: left;">PAGINA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1 Coperchio vano carta</td>
+<td style="text-align: left;">33</td>
+</tr>
+<tr>
+<td style="text-align: left;">2 Gruppo di stampa + taglierina</td>
+<td style="text-align: left;">30</td>
+</tr>
+<tr>
+<td style="text-align: left;">3 Tasto apertura coperchio vano carta</td>
+<td style="text-align: left;">29</td>
+</tr>
+<tr>
+<td style="text-align: left;">4 Coperchio taglierina</td>
+<td style="text-align: left;">25</td>
+</tr>
+<tr>
+<td style="text-align: left;">5 Tasto FEED</td>
+<td style="text-align: left;">27</td>
+</tr>
+<tr>
+<td style="text-align: left;">6 Tasto ON/OFF</td>
+<td style="text-align: left;">28</td>
+</tr>
+<tr>
+<td style="text-align: left;">7 Memoria permanente di dettaglio</td>
+<td style="text-align: left;">35</td>
+</tr>
+<tr>
+<td style="text-align: left;">8 Adattatore CA</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">9 Scheda di controllo</td>
+<td style="text-align: left;">32</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-rimozione-etichetta-antieffrazione">2 RIMOZIONE ETICHETTA ANTIEFFRAZIONE</h2>
+<ol>
+<li><strong>Capovolgere il dispositivo.</strong></li>
+<li><strong>Rimuovere completamente l’etichetta antieffrazione</strong> eliminandone tutti i residui.</li>
+</ol>
+<h2 id="3-applicazione-etichetta-antieffrazione">3 APPLICAZIONE ETICHETTA ANTIEFFRAZIONE</h2>
+<ol>
+<li><strong>Capovolgere il dispositivo.</strong></li>
+<li><strong>Applicare nella sede la nuova etichetta antieffrazione</strong> premendo e passando il dito più volte su di essa per una migliore aderenza.</li>
+</ol>
+<h2 id="4-sostituzione-coperchio-taglierina">4 SOSTITUZIONE COPERCHIO TAGLIERINA</h2>
+<ol>
+<li><strong>Premere il pulsante di apertura del coperchio vano carta.</strong></li>
+<li><strong>Aprire il coperchio del dispositivo.</strong></li>
+<li>
+<p><strong>Rimuovere il coperchio taglierina</strong> facendogli compiere il movimento indicato in figura.</p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Far combaciare gli incastri del coperchio taglierina nelle sedi previste nel telaio del dispositivo.</p>
+</li>
+</ol>
+<h2 id="5-rimozione-gruppo-stampante">5 RIMOZIONE GRUPPO STAMPANTE</h2>
+<ol>
+<li><strong>Rimuovere l’etichetta antieffrazione.</strong> Vedere paragrafi precedenti.</li>
+<li>
+<p><strong>Svitare le quattro viti di fissaggio A.</strong></p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Coppia di serraggio (x 4)
+40 cNm</p>
+</li>
+<li>
+<p><strong>Rimuovere il coperchio taglierina.</strong> Vedere paragrafi precedenti.</p>
+</li>
+<li><strong>Sfilare il gruppo stampante B.</strong></li>
+</ol>
+<h2 id="6-sostituzione-tasto-feed">6 SOSTITUZIONE TASTO FEED</h2>
+<ol>
+<li><strong>Rimuovere il gruppo stampante.</strong> Vedere paragrafi precedenti.</li>
+<li><strong>Rimuovere i due seeger A.</strong></li>
+<li><strong>Rimuovere il tasto FEED B.</strong></li>
+</ol>
+<h2 id="7-sostituzione-tasto-onoff">7 SOSTITUZIONE TASTO ON/OFF</h2>
+<ol>
+<li><strong>Rimuovere il gruppo stampante.</strong> Vedere paragrafi precedenti.</li>
+<li><strong>Rimuovere i due seeger A.</strong></li>
+<li><strong>Rimuovere il tasto ON/OFF B.</strong></li>
+</ol>
+<h2 id="8-sostituzione-tasto-apertura-coperchio-vano-carta">8 SOSTITUZIONE TASTO APERTURA COPERCHIO VANO CARTA</h2>
+<ol>
+<li><strong>Rimuovere il gruppo stampante.</strong> Vedere paragrafi precedenti.</li>
+<li>
+<p><strong>Svitare la vite di fissaggio A.</strong></p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Coppia di serraggio
+30 cNm</p>
+</li>
+<li>
+<p><strong>Rimuovere il pulsante di apertura del coperchio vano carta B e la molla C.</strong></p>
+</li>
+</ol>
+<h2 id="9-sostituzione-gruppo-di-stampa">9 SOSTITUZIONE GRUPPO DI STAMPA</h2>
+<ol>
+<li><strong>Rimuovere il gruppo stampante.</strong> Vedere paragrafi precedenti.</li>
+<li>
+<p><strong>Svitare le due viti di fissaggio A e rimuovere le due rondelle B.</strong></p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Coppia di serraggio (x 2)
+40 cNm</p>
+</li>
+<li>
+<p><strong>Rimuovere il gruppo di avanzamento carta C.</strong></p>
+</li>
+<li>
+<p><strong>Svitare la vite di fissaggio D e rimuovere il tasto OPEN E.</strong></p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Coppia di serraggio
+30 cNm</p>
+</li>
+<li>
+<p><strong>Rimuovere la fascetta F</strong> indicata in figura facendo attenzione a non danneggiare i cavi.</p>
+</li>
+<li>
+<p><strong>Svitare le tre viti di fissaggio G e rimuovere la rondella H.</strong></p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Coppia di serraggio (x 3)
+30 cNm</p>
+</li>
+<li>
+<p><strong>Svitare la vite di fissaggio I e rimuovere la rondella J, il cavo di terra della taglierina K e il cavo di terra della scheda di controllo L.</strong></p>
+<p><strong>NOTE DI MONTAGGIO</strong>
+Coppia di serraggio
+30 cNm
+Rispettare l’ordine dei componenti indicato in figura.</p>
+</li>
+<li>
+<p><strong>Rimuovere i connettori indicati in figura.</strong></p>
+</li>
+<li><strong>Sfilare il gruppo di stampa M</strong> facendo attenzione a non danneggiare i cablaggi.</li>
+<li>
+<p><strong>Svitare la vite di fissaggio N.</strong></p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Coppia di serraggio
+30 cNm</p>
+</li>
+</ol>
+<h2 id="10-sostituzione-scheda-di-controllo">10 SOSTITUZIONE SCHEDA DI CONTROLLO</h2>
+<ol>
+<li><strong>Rimuovere il gruppo stampante.</strong> Vedere paragrafi precedenti.</li>
+<li><strong>Rimuovere la fascetta A</strong> indicata in figura facendo attenzione a non danneggiare i cavi.</li>
+<li>
+<p><strong>Svitare la vite di fissaggio B e rimuovere la rondella C, il cavo di terra della taglierina D e il cavo di terra della scheda di controllo E.</strong></p>
+<p><strong>NOTE DI MONTAGGIO</strong>
+Coppia di serraggio
+30 cNm
+Rispettare l’ordine dei componenti indicato in figura.</p>
+</li>
+<li>
+<p><strong>Rimuovere i connettori indicati in figura.</strong></p>
+</li>
+<li>
+<p><strong>Svitare le tre viti di fissaggio F e rimuovere la scheda di controllo G.</strong></p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Coppia di serraggio (x 3)
+50 cNm</p>
+</li>
+<li>
+<p><strong>Rimuovere i tasti interni</strong> facendo attenzione a non danneggiarli.</p>
+</li>
+</ol>
+<h2 id="11-sostituzione-coperchio-vano-carta">11 SOSTITUZIONE COPERCHIO VANO CARTA</h2>
+<ol>
+<li><strong>Rimuovere il gruppo stampante.</strong> Vedere paragrafi precedenti.</li>
+<li><strong>Rimuovere il seeger A.</strong></li>
+<li>
+<p><strong>Sfilare il perno B.</strong></p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Verificare che la molla C sia posizionata come mostrato in figura.</p>
+</li>
+<li>
+<p><strong>Rimuovere il coperchio vano carta C.</strong></p>
+</li>
+<li>
+<p><strong>Svitare le due viti di fissaggio D e rimuovere le due rondelle E.</strong></p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Coppia di serraggio (x 2)
+40 cNm</p>
+</li>
+<li>
+<p><strong>Rimuovere il gruppo di avanzamento carta F.</strong></p>
+</li>
+</ol>
+<h2 id="12-sostituzione-scheda-wi-fibluetooth">12 SOSTITUZIONE SCHEDA WI-FI/BLUETOOTH</h2>
+<p>(P3-N WI-FI, P3-N BT)</p>
+<ol>
+<li><strong>Rimuovere il gruppo stampante.</strong> Vedere paragrafi precedenti.</li>
+<li><strong>Rimuovere il connettore indicato in figura.</strong></li>
+<li><strong>Rimuovere dalla scheda il connettore indicato in figura.</strong></li>
+<li>
+<p><strong>Sollevare la scheda mediante l’utilizzo di un cacciavite, staccandola dal biadesivo.</strong></p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Verificare che la sede dove verrà posizionato il biadesivo della nuova scheda Wi-Fi/Bluetooth sia pulita ed esente da residui di colla.</p>
+</li>
+</ol>
+<h2 id="13-sostituzione-memoria-permanente-di-dettaglio">13 SOSTITUZIONE MEMORIA PERMANENTE DI DETTAGLIO</h2>
+<ol>
+<li><strong>Rimuovere il gruppo stampante.</strong> Vedere paragrafi precedenti.</li>
+<li>
+<p><strong>Sbloccare la memoria permanente di dettaglio</strong> spingendola verso il centro della scheda di controllo e rilasciandola, quindi sfilarla.</p>
+<p><strong>NOTA DI MONTAGGIO</strong>
+Inserire la nuova memoria permanente di dettaglio nel verso indicato. La memoria può essere inserita in un unico senso. Eventuali forzature possono danneggiarla.</p>
+</li>
+<li>
+<p><strong>Eseguire la procedura di inizializzazione</strong> descritta più avanti nel manuale alla sezione “PROCEDURE”.</p>
+</li>
+<li><strong>Riassemblare il gruppo stampante.</strong> Vedere paragrafi precedenti.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../generalita/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: GENERALITÀ">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                GENERALITÀ
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../elettronica/" class="md-footer__link md-footer__link--next" aria-label="Successivo: ELETTRONICA">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                ELETTRONICA
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright Custom S.p.A 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
