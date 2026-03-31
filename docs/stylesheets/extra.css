@@ -13,6 +13,9 @@
   /* --md-text-font controlla il corpo del testo e i titoli */
   --md-text-font: 'Titillium Web', sans-serif;
   
+  /* Colore del testo principale */
+  --md-text-fg-color:           #383E42;
+
   /* Opzionale: Se vuoi usarlo anche per i blocchi di codice, scommenta la riga sotto */
   /* --md-code-font: 'Titillium Web', monospace; */
 
@@ -32,8 +35,7 @@
   --md-footer-bottom-bg-color:  #1B3640; 
   
   /* Assicuriamo che il testo nel footer sia bianco per contrasto */
-  --md-footer-fg-color:         #383E42;
-  --md-footer-bottom-fg-color:  #383E42;
+  --md-footer-fg-color:         #FFFFFF;
 }
 
 /* 3. Forzatura (Fallback di sicurezza) */
