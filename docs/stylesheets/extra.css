@@ -32,8 +32,8 @@
   --md-footer-bottom-bg-color:  #1B3640; 
   
   /* Assicuriamo che il testo nel footer sia bianco per contrasto */
-  --md-footer-fg-color:         #ffffff;
-  --md-footer-bottom-fg-color:  #ffffff;
+  --md-footer-fg-color:         #383E42;
+  --md-footer-bottom-fg-color:  #383E42;
 }
 
 /* 3. Forzatura (Fallback di sicurezza) */
